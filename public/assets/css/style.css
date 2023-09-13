@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.bg{
+    margin: 0;
+    padding: 0;
+    background-color: #00102E;
+}
+
+.img-bg{
+    margin: 0;
+    padding: 0;
+    background-color: #00102E;
+    min-height: 100vh;
+    width: 100%;
+    background: url("../image/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-wrapper{
+    width: 610px;
+}
+
+.dashboard-wrapper .card{
+    background-color: #FFFFFF40;
+    border: 1px solid #DCDCDC;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-wrapper .card input{
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF40;
+    border: 1px solid #DCDCDC;
+    color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.dashboard-wrapper .card input::placeholder{
+    color: white;
+}
+.dashboard-wrapper .card button{
+    box-shadow: 0px 7px 0px 0px #A73D39;
+    /* height: 50px; */
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #D9534F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.iconsgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.logob {
+    width: 220px;
+    height: 220px;
+}
+
+.centerlogof {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logof {
+    width: 180px;
+    height: 180px;
+}
