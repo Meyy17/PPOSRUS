@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VoteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
+});
+Route::post('/authentication', function () {
+    return redirect()->route('vote.osis');
+})->name('authentication');
+Route::prefix('vote')->name('vote.')->group(function () {
+    Route::get('osis', [VoteController::class, 'voteOsis'])->name('osis');
+    Route::get('mpk', [VoteController::class, 'voteMpk'])->name('mpk');
+    Route::post('action', [VoteController::class, 'vote'])->name('action');
+    Route::get('success', [VoteController::class, 'success'])->name('success');
 });

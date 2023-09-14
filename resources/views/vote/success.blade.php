@@ -11,14 +11,10 @@
                     </div>
                 </div>
                 <h1 style="text-align: center; color: white;">
-                    PEMILIHAN PEMIMPIN ORGANISASI SEKOLAH<br>SMK RADEN UMAR SAID KUDUS<br>2023-2024
+                    BERHASIL MEGIKUTI PEMILIHAN PEMIMPIN ORGANISASI SEKOLAH<br>SMK RADEN UMAR SAID KUDUS<br>2023-2024
                 </h1>
-                <form action="{{ route('authentication')}}" method="POST" class="card">
-                    @csrf
-                    <span style="color: white;">Masukkan NIS</span>
-                    <input type="number" placeholder="NIS" required name="nis">
-                    <button type="submit">Masuk</button>
-                </form>
+
+                <button style="width: 100%; padding: 10px;font-size: 20px; font-weight: 600;" class="button-primary" type="submit">Kembali Ke Home</button>
             </div>
         </div>
     </div>
