@@ -14,7 +14,7 @@
                     BERHASIL MEGIKUTI PEMILIHAN PEMIMPIN ORGANISASI SEKOLAH<br>SMK RADEN UMAR SAID KUDUS<br>2023-2024
                 </h1>
 
-                <button style="width: 100%; padding: 10px;font-size: 20px; font-weight: 600;" class="button-primary" type="submit">Kembali Ke Home</button>
+                <button style="width: 100%; padding: 10px;font-size: 20px; font-weight: 600;" class="button-primary" onclick="window.location.href=`{{route('home')}}`">Kembali Ke Home</button>
             </div>
         </div>
     </div>
