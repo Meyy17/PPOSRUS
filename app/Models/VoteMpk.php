@@ -13,4 +13,9 @@ class VoteMpk extends Model
         'id_user',
         'id_mpk'
     ];
+
+    public function mpk()
+    {
+        return $this->belongsTo(Mpk::class, 'id_mpk');
+    }
 }

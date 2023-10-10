@@ -16,7 +16,7 @@
                 <form action="{{ route('authentication')}}" method="POST" class="card">
                     @csrf
                     <span style="color: white;">Masukkan NIS</span>
-                    <input type="number" placeholder="NIS" required name="nis">
+                    <input type="number" class="input-default" placeholder="NIS" required name="nis">
                     <button type="submit">Masuk</button>
                 </form>
             </div>

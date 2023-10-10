@@ -11,10 +11,16 @@
                     </div>
                 </div>
                 <h1 style="text-align: center; color: white;">
-                    BERHASIL MEGIKUTI PEMILIHAN PEMIMPIN ORGANISASI SEKOLAH<br>SMK RADEN UMAR SAID KUDUS<br>2023-2024
+                    PEMILIHAN PEMIMPIN ORGANISASI SEKOLAH<br>SMK RADEN UMAR SAID KUDUS<br>2023-2024
                 </h1>
-
-                <button style="width: 100%; padding: 10px;font-size: 20px; font-weight: 600;" class="button-primary" onclick="window.location.href=`{{route('index')}}`">Kembali Ke Home</button>
+                <form action="{{ route('authentication.admin')}}" method="POST" class="card">
+                    @csrf
+                    <span style="color: white;">Masukkan Email</span>
+                    <input class="input-default" type="email" placeholder="Email" required name="email">
+                    <span style="color: white;">Masukkan Password</span>
+                    <input class="input-default" placeholder="Password" required name="password">
+                    <button type="submit">Masuk</button>
+                </form>
             </div>
         </div>
     </div>

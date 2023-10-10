@@ -13,4 +13,9 @@ class VoteOsis extends Model
         'id_user',
         'id_osis'
     ];
+
+    public function osis()
+    {
+        return $this->belongsTo(Osis::class, 'id_osis');
+    }
 }

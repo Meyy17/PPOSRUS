@@ -39,13 +39,13 @@ input[type=number] {
 }
 
 .sidebar{
+    /* height: 80vh; */
     width: 12%;
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 3%;
     display: flex;
     align-items: center;
-    height: 100vh;
 }
 
 .sidebarbtn-t{
@@ -110,6 +110,14 @@ input[type=number] {
     align-items: center;
 }
 
+.center-all{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .welcome-wrapper{
     width: 610px;
 }
@@ -122,7 +130,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
 }
-.welcome-wrapper .card input{
+.input-default{
     height: 30px;
     margin-top: 10px;
     border-radius: 10px;
@@ -251,6 +259,16 @@ input[type=number] {
     width: 29%;
     margin-bottom: 20px;
 }
+.card-dashboard-full{
+    background-color: #FFFFFF40;
+    border: 1px solid #DCDCDC;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+}
 
 .tabbar{
     display: flex;
@@ -291,4 +309,12 @@ input[type=number] {
     border-radius: 10px;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+}
 
+
+.form-add{
+    width: 100%;
+}

@@ -42,4 +42,34 @@ class AuthController extends Controller
 
         return redirect()->back()->with('alert', 'Updated!');
     }
+    public function loginAdmin(Request $request)
+    {
+
+        $request->validate(
+            [
+                'email' => 'required',
+                'password' => 'required',
+            ]
+        );
+
+        $credentials = [
+            'email' => $request->email,
+            'password' => $request->password
+        ];
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->route('admin.dashboard');
+        }
+
+
+        return redirect()->back()->with('alert', 'Updated!');
+    }
+
+    public function logout()
+    {
+
+        Auth::logout();
+        return redirect()->route('index');
+    }
 }

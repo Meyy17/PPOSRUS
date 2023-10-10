@@ -5,7 +5,7 @@
     <div class="wrap">
         @foreach($osis as $data)
         <div class="card-content">
-            <img src="{{$data->image}}">
+            <img src="{{env('APP_URL').'/storage/'.$data->image}}">
             <h1 style="color: white; padding: 0; margin: 0;margin-top: 10px;">PASLON {{$data->number}}</h1>
             <span style="color: #DCDCDC; font-weight: 400; padding: 0; margin: 0; margin-top: 10px;">Ketua</span>
             <h1 style="color: white; padding: 0; margin: 0;  font-size: 15px;">{{$data->ketua}}</h1>
